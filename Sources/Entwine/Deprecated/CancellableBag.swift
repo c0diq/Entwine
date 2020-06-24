@@ -25,7 +25,7 @@
 import Combine
 
 /// A container for cancellables that will be cancelled when the bag is deallocated or cancelled itself
-@available(*, deprecated, message: "Replace with mutable Set<AnyCancellable>")
+@available(iOS, introduced: 13, deprecated: 13, message: "Replace with mutable Set<AnyCancellable>")
 public final class CancellableBag: Cancellable {
     
     public init() {}
@@ -45,7 +45,7 @@ public final class CancellableBag: Cancellable {
 }
 
 // MARK: - Cancellable extension
-
+@available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
 public extension Cancellable {
     @available(*, deprecated, message: "Replace CancellableBag with Set<AnyCancellable> and use `store(in:)`")
     func cancelled(by cancellableBag: CancellableBag) {

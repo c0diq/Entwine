@@ -51,6 +51,7 @@ public final class TrampolineScheduler {
 
 // MARK: - Scheduler conformance
 
+@available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
 extension TrampolineScheduler: Scheduler {
     
     public typealias SchedulerTimeType = ImmediateScheduler.SchedulerTimeType

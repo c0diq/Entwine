@@ -24,5 +24,5 @@
 
 import Combine
 
-@available(*, deprecated, message: "Replace with mutable Set<AnyCancellable>")
+@available(iOS, introduced: 13, deprecated: 13, message: "Replace with mutable Set<AnyCancellable>")
 public typealias CancellationBag = Set<AnyCancellable>
