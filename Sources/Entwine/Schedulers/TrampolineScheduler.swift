@@ -33,6 +33,7 @@ import Foundation
 ///
 /// You can only use this scheduler for immediate actions. If you attempt to schedule
 /// actions after a specific date, the scheduler produces a fatal error.
+@available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
 public final class TrampolineScheduler {
     
     public static let shared = TrampolineScheduler()
